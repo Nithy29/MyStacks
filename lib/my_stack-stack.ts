@@ -1,20 +1,3 @@
-// import * as cdk from 'aws-cdk-lib';
-// import { Construct } from 'constructs';
-// import * as sqs from 'aws-cdk-lib/aws-sqs';
-
-// export class MyStackStack extends cdk.Stack {
-//   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
-//     super(scope, id, props);
-
-    // The code that defines your stack goes here
-
-    // example resource
-    // const queue = new sqs.Queue(this, 'MyStackQueue', {
-    //   visibilityTimeout: cdk.Duration.seconds(300)
-    // });
-//   }
-// }
-
 
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
@@ -88,13 +71,6 @@ export class MyStackStack extends cdk.Stack {
         passwordLength: 30,
       },
     });
-
-
-    // const mysqlCredentials = rds.Credentials.fromSecret(
-    //       rdsSecret,
-    //       UserName,
-    //     );
-    
 
 
     // Create an RDS instance
